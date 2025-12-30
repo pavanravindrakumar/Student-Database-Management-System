@@ -1,69 +1,83 @@
 # Student Record Management System (Python)
 
-A command-line based Student Record Management System built using Python and Object-Oriented Programming principles.  
-This project allows efficient management of student records with persistent storage and basic algorithmic optimizations.
+A command-line based **Student Record Management System** developed using **Python** and **Object-Oriented Programming (OOP)** principles.  
+This project enables efficient management of student records with **persistent storage** and basic **algorithmic optimizations**.
 
 ---
 
-## Features
+## 🚀 Features
 - Add new student records
 - Update student marks
 - Delete student records using roll number
 - Display all student records
 - Sort students by marks (descending order)
-- Search student by roll number using Binary Search
+- Search students by roll number using **Binary Search**
 - Persistent storage using file handling
-- Export student data to CSV format
+- Export student data to **CSV format**
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 - Python
 - Object-Oriented Programming (OOP)
 - File Handling
 - Searching and Sorting Algorithms
 - CSV File Handling
+- Git & GitHub
 
 ---
 
-## Project Structure
+## 📁 Project Structure
+Student-Record-Management-System/ 
+├── main.py                 # Entry point (menu-driven CLI) 
+├── student_manager.py      # Student CRUD operations 
+├── file_handler.py         # File and CSV handling logic 
+├── utils.py                # Input validation utilities 
+├── data/   
+|        └── students.csv        # Persistent storage 
+└── README.md
+
 ---
 
-## How to Run the Project
-1. Clone or download the repository
-2. Navigate to the project directory
+## ▶️ How to Run the Project
+1. Clone or download the repository  
+2. Navigate to the project directory  
 3. Run the program using:
-4.Follow the on-screen menu options
+   ```bash
+   python main.py
+4. Follow the on-screen menu options
 
 ---
 
-## Time Complexity Analysis
-- Add Student: **O(1)**
-- Show All Students: **O(n)**
-- Update Student: **O(n)**
-- Delete Student: **O(n)**
-- Linear Search: **O(n)**
-- Binary Search: **O(log n)** (after sorting)
-- Sorting Students: **O(n log n)**
+⏱ Time Complexity Analysis
+Add Student: O(1)
+Show All Students: O(n)
+Update Student: O(n)
+Delete Student: O(n)
+Linear Search: O(n)
+Binary Search: O(log n) (after sorting)
+Sorting Students: O(n log n)
 
 ---
 
-## Key Learnings
-- Applied Object-Oriented Programming concepts in Python
-- Implemented CRUD operations in a CLI application
-- Used file handling for persistent data storage
-- Implemented searching and sorting algorithms
-- Exported structured data to CSV for external use
+📚 Key Learnings
+Applied Object-Oriented Programming concepts in Python
+Implemented CRUD operations in a CLI-based application
+Used file handling for persistent data storage
+Implemented searching and sorting algorithms
+Exported structured data to CSV format
+Gained hands-on experience with Git and GitHub
 
 ---
 
-## Future Improvements
-- Integrate a database for scalable storage
-- Add user authentication
-- Implement unit testing
-- Improve input validation
+🔮 Future Improvements
+Integrate a database for scalable storage
+Add user authentication
+Implement unit testing
+Improve input validation
+Build a GUI or web-based interface
 
 ---
 
-## Author
-**Karibandi Pavan Ravindra Kumar**
+👤 Author
+Karibandi Pavan Ravindra Kumar
