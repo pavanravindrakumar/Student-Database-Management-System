@@ -9,7 +9,7 @@ from student_manager import (
 
 def menu():
     while True:
-        print("\n--- Student Database Management ---")
+        print("\n--- Student Database Management System---")
         print("1. Add Student")
         print("2. View Students")
         print("3. Search Student")
