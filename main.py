@@ -1,4 +1,4 @@
-from students_manager import (
+from student_manager import (
     add_student,
     view_students,
     search_student,
