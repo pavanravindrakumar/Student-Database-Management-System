@@ -84,3 +84,8 @@ def sort_students_by_marks():
     print("\nStudents sorted by marks (high → low):")
     for s in students:
         print(s)
+
+def export_to_csv():
+    students = load_students()
+    save_students(students)
+    print("Students exported to CSV successfully.")

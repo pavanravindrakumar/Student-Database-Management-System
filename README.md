@@ -28,14 +28,15 @@ This project enables efficient management of student records with **persistent s
 ---
 
 ## 📁 Project Structure
-Student-Record-Management-System/ 
-├── main.py                 # Entry point (menu-driven CLI) 
-├── student_manager.py      # Student CRUD operations 
-├── file_handler.py         # File and CSV handling logic 
-├── utils.py                # Input validation utilities 
-├── data/   
-|        └── students.csv        # Persistent storage 
-└── README.md
+
+Student-Record-Management-System/
+├── main.py                 # Application entry point (menu-driven CLI)
+├── student_manager.py      # Core student CRUD operations
+├── file_handler.py         # File & CSV handling logic
+├── utils.py                # Input validation and helper utilities
+├── data/
+│   └── students.csv        # Persistent student records
+└── README.md               # Project documentation
 
 ---
 
@@ -49,7 +50,7 @@ Student-Record-Management-System/
 
 ---
 
-⏱ Time Complexity Analysis
+## ⏱ Time Complexity Analysis
 Add Student: O(1)
 Show All Students: O(n)
 Update Student: O(n)
@@ -60,7 +61,26 @@ Sorting Students: O(n log n)
 
 ---
 
-📚 Key Learnings
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/1_menu.png)
+
+### Add Student
+![Add Student](screenshots/2_add_student.png)
+
+### Search Student
+![Search Student](screenshots/3_search_student.png)
+
+### Sort Students by Marks
+![Sort Students](screenshots/4_sort_students.png)
+
+### Export Students to CSV
+![Export CSV](screenshots/5_export_csv.png)
+
+---
+
+## 📚 Key Learnings
 Applied Object-Oriented Programming concepts in Python
 Implemented CRUD operations in a CLI-based application
 Used file handling for persistent data storage
@@ -70,7 +90,7 @@ Gained hands-on experience with Git and GitHub
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 Integrate a database for scalable storage
 Add user authentication
 Implement unit testing
@@ -79,5 +99,5 @@ Build a GUI or web-based interface
 
 ---
 
-👤 Author
+## 👤 Author
 Karibandi Pavan Ravindra Kumar
