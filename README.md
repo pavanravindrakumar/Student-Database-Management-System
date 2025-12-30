@@ -64,19 +64,19 @@ Sorting Students: O(n log n)
 ## Screenshots
 
 ### Main Menu
-![Main Menu](./screenshots/1_menu.png)
+![Main Menu](./screenshots/1_menu.png.png)
 
 ### Add Student
-![Add Student](./screenshots/2_add_student.png)
+![Add Student](./screenshots/2_add_student.png.png)
 
 ### Search Student
-![Search Student](./screenshots/3_search_student.png)
+![Search Student](./screenshots/3_search_student.png.png)
 
 ### Sort Students by Marks
-![Sort Students](./screenshots/4_sort_students.png)
+![Sort Students](./screenshots/4_sort_students.png.png)
 
 ### Export Students to CSV
-![Export CSV](./screenshots/5_export_csv.png)
+![Export CSV](./screenshots/5_export_csv.png.png)
 
 ---
 
