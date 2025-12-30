@@ -49,7 +49,7 @@ Student-Record-Management-System/
 
 ---
 
-⏱ Time Complexity Analysis
+## ⏱ Time Complexity Analysis
 Add Student: O(1)
 Show All Students: O(n)
 Update Student: O(n)
@@ -60,7 +60,7 @@ Sorting Students: O(n log n)
 
 ---
 
-📚 Key Learnings
+## 📚 Key Learnings
 Applied Object-Oriented Programming concepts in Python
 Implemented CRUD operations in a CLI-based application
 Used file handling for persistent data storage
@@ -70,7 +70,7 @@ Gained hands-on experience with Git and GitHub
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 Integrate a database for scalable storage
 Add user authentication
 Implement unit testing
@@ -79,5 +79,5 @@ Build a GUI or web-based interface
 
 ---
 
-👤 Author
+## 👤 Author
 Karibandi Pavan Ravindra Kumar
