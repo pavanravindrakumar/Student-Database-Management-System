@@ -28,14 +28,15 @@ This project enables efficient management of student records with **persistent s
 ---
 
 ## 📁 Project Structure
-Student-Record-Management-System/ 
-├── main.py                 # Entry point (menu-driven CLI) 
-├── student_manager.py      # Student CRUD operations 
-├── file_handler.py         # File and CSV handling logic 
-├── utils.py                # Input validation utilities 
-├── data/   
-|        └── students.csv        # Persistent storage 
-└── README.md
+
+Student-Record-Management-System/
+├── main.py                 # Application entry point (menu-driven CLI)
+├── student_manager.py      # Core student CRUD operations
+├── file_handler.py         # File & CSV handling logic
+├── utils.py                # Input validation and helper utilities
+├── data/
+│   └── students.csv        # Persistent student records
+└── README.md               # Project documentation
 
 ---
 
