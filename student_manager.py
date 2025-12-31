@@ -19,7 +19,7 @@ def add_student():
     })
 
     save_students(students)
-    print("Student added successfully.")
+    print(f"Student '{name}' added successfully.")
 
 
 def view_students():
@@ -29,13 +29,16 @@ def view_students():
         return
 
     for s in students:
-        print(
-            f"Roll: {s['roll']} | "
-            f"Name: {s['name']} | "
-            f"Marks: {s['marks']}"
-        )
+        display_student(s)
 
+def display_student(student):
+    print("-" * 20)
+    print(f"Roll   : {student['roll']}")
+    print(f"Name   : {student['name'].title()}")
+    print(f"Marks  : {student['marks']}")
+    print("-" * 20)
 
+    
 def search_student():
     students = load_students()
     roll = get_non_empty_input("Enter roll number to search: ")
@@ -43,7 +46,7 @@ def search_student():
     for s in students:
         if s["roll"] == roll:
             print("Student found:")
-            print(s)
+            display_student(s)
             return
 
     print("Student not found.")
@@ -53,11 +56,24 @@ def update_student():
     students = load_students()
     roll = get_non_empty_input("Enter roll number to update: ")
 
-    for s in students:
-        if s["roll"] == roll:
-            s["marks"] = get_valid_int("Enter new marks: ")
+    for student in students:
+        if student["roll"] == roll:
+            print("Student found:")
+            display_student(student)
+
+            new_marks = get_valid_int("Enter new marks (0-100): ")
+
+            confirm = input(
+                f"Confirm update marks for '{student['name']}' to {new_marks}? (y/n): "
+            )
+
+            if confirm.lower() != 'y':
+                print("Update cancelled.")
+                return
+
+            student["marks"] = new_marks
             save_students(students)
-            print("Student updated successfully.")
+            print(f"Student '{student['name']}' updated successfully.")
             return
 
     print("Student not found.")
@@ -67,15 +83,25 @@ def delete_student():
     students = load_students()
     roll = get_non_empty_input("Enter roll number to delete: ")
 
-    new_students = [s for s in students if s["roll"] != roll]
+    for student in students:
+        if student["roll"] == roll:
+            print("Student found:")
+            display_student(student)
 
-    if len(new_students) == len(students):
-        print("Student not found.")
-        return
+            confirm = input(
+                f"Are you sure you want to delete student '{student['name']}'? (y/n): "
+            )
 
-    save_students(new_students)
-    print("Student deleted successfully.")
+            if confirm.lower() != 'y':
+                print("Delete operation cancelled.")
+                return
 
+            students.remove(student)
+            save_students(students)
+            print(f"Student '{student['name']} deleted successfully.")
+            return
+
+    print("Student not found.")
 
 def sort_students_by_marks():
     students = load_students()
